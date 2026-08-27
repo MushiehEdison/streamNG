@@ -9,7 +9,7 @@ export default function RecordStream() {
   const [status, setStatus] = useState('Connecting...');
 
   useEffect(() => {
-    const ws = new WebSocket('ws://localhost:8000/ws/stream/');
+    const ws = new WebSocket('https://streamng.onrender.com/ws/stream/');
     wsRef.current = ws;
 
     ws.onopen = () => {
